@@ -105,10 +105,6 @@ alias speedup="sudo tc qdisc del dev wlp58s0 root netem"
 alias lookatme="sudo logkeys --start & sudo tail --follow /var/log/logkeys.log | grep --color -E '[0-9][0-9]:[0-9][0-9]:[0-9][0-9]'"
 alias c="clear"
 
-# AWS
-alias lavazares="ssh -i ~/Desktop/codephil/codephil.pem ubuntu@ec2-18-236-94-235.us-west-2.compute.amazonaws.com"
-alias typephil="ssh -i ~/.ssh/codephil.pem ubuntu@typephil.org"
-
 # GCP
 # alias heck="gcloud compute --project \"heckell-199100\" ssh --zone \"us-east1-b\" \"heckell\""
 #alias heck="ssh -i ~/.ssh/google_compute_engine -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o StrictHostKeyChecking=no nwc2112_columbia_edu@35.196.128.49"
