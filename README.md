@@ -6,3 +6,7 @@ cd config &&
 chmod +x ./*.sh &&
 ./setup.sh
 ```
+
+- `i3` window manager
+- `vim`
+- `zsh`
