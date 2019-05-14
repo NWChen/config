@@ -1,18 +1,26 @@
 set nocompatible
 filetype off
 
+" change mapleader
+let mapleader=","
+
 " vundle runtime path
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " vundle plugins
+Plugin 'scrooloose/nerdtree'
 Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'valloric/YouCompleteMe'
 
 " end vundle
 call vundle#end()
+
+" plugins
+nmap <leader>ne :NERDTree<cr>
 
 " color scheme
 " lyla, orbital, phoenix, papaya, papaya_original, apprentice, paramount, monochrome, pencil
@@ -30,7 +38,9 @@ nnoremap <Left> <Esc><C-W><C-H>
 
 " code folding
 set foldmethod=indent
-set foldlevel=99
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 nnoremap <space> za
 
 " pathogen setup
@@ -42,9 +52,6 @@ syntax on
 " modify runtime path to include ~/.vim/bundle
 call pathogen#helptags()
 "call pathogen#runtime_append_all_bundles()
-
-" change mapleader
-let mapleader=","
 
 " general vim behavior
 set noswapfile
@@ -72,3 +79,6 @@ set encoding=utf-8
 "	autocmd filetype python set expandtab
 "endif
 autocmd filetype markdown setlocal spell
+
+" python
+imap <F5> <Esc>:w<CR>:!clear;python %<CR>
