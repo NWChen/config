@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/nwchen/.oh-my-zsh
+export ZSH=/home/neil/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -115,16 +115,16 @@ alias c="clear"
 alias dep="~/go/bin/dep"
 
 # OS W4118
-#export ANDROID_SDK_ROOT="/home/nwchen/Desktop/senior/os/f18-hmwk2-setup/android-sdk"
-#export ANDROID_SDK_HOME="/home/nwchen/Desktop/senior/os/f18-hmwk2-setup/android-sdk"
-#export ANDROID_NDK_ROOT="/home/nwchen/android_ndk"
+#export ANDROID_SDK_ROOT="/home/neil/Desktop/senior/os/f18-hmwk2-setup/android-sdk"
+#export ANDROID_SDK_HOME="/home/neil/Desktop/senior/os/f18-hmwk2-setup/android-sdk"
+#export ANDROID_NDK_ROOT="/home/neil/android_ndk"
 #export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
-#alias runemulator="cd $ANDROID_SDK_ROOT/tools; ./emulator @w4118-GalaxyNexus -kernel /home/nwchen/Desktop/senior/os/f18-hmwk3-team12/kernel/arch/x86/boot/bzImage -show-kernel -no-snapshot-load"
+#alias runemulator="cd $ANDROID_SDK_ROOT/tools; ./emulator @w4118-GalaxyNexus -kernel /home/neil/Desktop/senior/os/f18-hmwk3-team12/kernel/arch/x86/boot/bzImage -show-kernel -no-snapshot-load"
 #alias emulator="$ANDROID_SDK_ROOT/emulator/emulator"
 #alias adb="~/adb-fastboot/platform-tools/adb"
-#alias google="sudo /home/nwchen/Desktop/dev/googler/googler"
+#alias google="sudo /home/neil/Desktop/dev/googler/googler"
 ## SEEMS SHADY:
-#export NDK_PATH="/home/nwchen/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin"
+#export NDK_PATH="/home/neil/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/bin"
 
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
@@ -133,13 +133,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/nwchen/Desktop/columbia/research/google-cloud-sdk/path.zsh.inc' ]; then source '/home/nwchen/Desktop/columbia/research/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/home/neil/Desktop/columbia/research/google-cloud-sdk/path.zsh.inc' ]; then source '/home/nwchen/Desktop/columbia/research/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/nwchen/Desktop/columbia/research/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/nwchen/Desktop/columbia/research/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/home/neil/Desktop/columbia/research/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/nwchen/Desktop/columbia/research/google-cloud-sdk/completion.zsh.inc'; fi
 
 # OPAM configuration
-. /home/nwchen/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+. /home/neil/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 export NDK_PATH="~NDK3/bin"
 export NDK_PATH="~/NDK3/bin"
 
@@ -153,3 +153,14 @@ export LD_LIBRARY_PATH="$HOME/.mujoco/mujoco200/bin:$LD_LIBRARY_PATH"
 
 # TF configuration
 export PYTHONPATH=$PYTHONPATH:~/Desktop/tensorflow/models/research:~/Desktop/tensorflow/models/research/slim
+
+alias bright="sudo vim /sys/class/backlight/intel_backlight/brightness"
+alias wifi="nmtui"
+alias wifioff="nmcli networking off && nmcli n wifi off"
+alias wifion="nmcli networking on && nmcli n wifi on"
+alias record="simplescreenrecorder"
+alias idea="~/Desktop/config/idea/bin/idea.sh"
+alias h="ghci-color"
+
+export PATH="$PATH:/home/neil/android/platform-tools"
+
