@@ -154,13 +154,29 @@ export LD_LIBRARY_PATH="$HOME/.mujoco/mujoco200/bin:$LD_LIBRARY_PATH"
 # TF configuration
 export PYTHONPATH=$PYTHONPATH:~/Desktop/tensorflow/models/research:~/Desktop/tensorflow/models/research/slim
 
-alias bright="sudo vim /sys/class/backlight/intel_backlight/brightness"
+# alias bright2="sudo vim /sys/class/backlight/intel_backlight/brightness"
 alias wifi="nmtui"
 alias wifioff="nmcli networking off && nmcli n wifi off"
 alias wifion="nmcli networking on && nmcli n wifi on"
 alias record="simplescreenrecorder"
 alias idea="~/Desktop/config/idea/bin/idea.sh"
 alias h="ghci-color"
+alias bt="sudo systemctl status bluetooth.service"
+alias bton="sudo systemctl enable bluetooth.service"
+alias btoff="sudo systemctl disable bluetooth.service"
+alias chrome="google-chrome &"
+alias extend="xrandr --output DP-1 --auto --above eDP-1"
+alias res="x --output eDP-1 --mode"
+
+function bright() 
+{
+	echo "$1" | sudo tee /sys/class/backlight/intel_backlight/brightness
+}
+
+function diary()
+{
+	vim ~/Desktop/writing/"$1"
+}
 
 export PATH="$PATH:/home/neil/android/platform-tools"
-
+export PATH="$PATH:/home/neil/.cabal/bin/"
