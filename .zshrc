@@ -58,7 +58,7 @@ ZSH_THEME="bureau"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-256color)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -164,9 +164,18 @@ alias h="ghci-color"
 alias bt="sudo systemctl status bluetooth.service"
 alias bton="sudo systemctl enable bluetooth.service"
 alias btoff="sudo systemctl disable bluetooth.service"
-alias chrome="google-chrome &"
+alias chrome="echo 'Consider using brave-browser.' && google-chrome >/dev/null &"
 alias extend="xrandr --output DP-1 --auto --above eDP-1"
-alias res="x --output eDP-1 --mode"
+alias res="xrandr --output eDP-1 --mode"
+alias brave="brave-browser >/dev/null &"
+alias exercism="/snap/exercism/5/exercism"
+alias calc="libreoffice --calc"
+alias cap="import"
+alias todo="~/Desktop/systems/todo.sh"
+alias t=todo
+alias food="calories"
+alias weather="curl wttr.in"
+alias define="dict"
 
 function bright() 
 {
@@ -180,3 +189,4 @@ function diary()
 
 export PATH="$PATH:/home/neil/android/platform-tools"
 export PATH="$PATH:/home/neil/.cabal/bin/"
+export PATH="$PATH:/home/neil/Desktop/automation/scala/scala-2.13.3/bin"
