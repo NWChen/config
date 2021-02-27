@@ -119,6 +119,7 @@ alias dep="~/go/bin/dep"
 #export ANDROID_SDK_HOME="/home/neil/Desktop/senior/os/f18-hmwk2-setup/android-sdk"
 #export ANDROID_NDK_ROOT="/home/neil/android_ndk"
 #export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 #alias runemulator="cd $ANDROID_SDK_ROOT/tools; ./emulator @w4118-GalaxyNexus -kernel /home/neil/Desktop/senior/os/f18-hmwk3-team12/kernel/arch/x86/boot/bzImage -show-kernel -no-snapshot-load"
 #alias emulator="$ANDROID_SDK_ROOT/emulator/emulator"
 #alias adb="~/adb-fastboot/platform-tools/adb"
@@ -165,17 +166,24 @@ alias bt="sudo systemctl status bluetooth.service"
 alias bton="sudo systemctl enable bluetooth.service"
 alias btoff="sudo systemctl disable bluetooth.service"
 alias chrome="echo 'Consider using brave-browser.' && google-chrome >/dev/null &"
-alias extend="xrandr --output DP-1 --auto --above eDP-1"
-alias res="xrandr --output eDP-1 --mode"
+alias extend2="xrandr --output DP-1-1 --auto --above eDP-1 && xrandr --output DP-1-2 --auto --left-of DP-1-1 --rotate left && xrandr --output eDP-1 --off"
+alias extend1="xrandr --output DP-1-1 --auto --above eDP-1 && xrandr --output DP-1-2 --auto --left-of DP-1-1 --rotate left"
+alias extend="xrandr --output DP-1 --auto --above eDP-1 --output eDP-1 --auto"
+alias extendsafe="xrandr --output DP-1 --auto --above eDP-1"
+alias reset="xrandr --output eDP-1 --auto"
 alias brave="brave-browser >/dev/null &"
 alias exercism="/snap/exercism/5/exercism"
 alias calc="libreoffice --calc"
 alias cap="import"
-alias todo="~/Desktop/systems/todo.sh"
-alias t=todo
-alias food="calories"
+# alias todo="~/Desktop/systems/todo.sh"
+# alias t=todo
+# alias food="calories"
+alias todo="vim ~/Desktop/writing/todo.md"
 alias weather="curl wttr.in"
 alias define="dict"
+alias ide="~/Desktop/automation/scala/idea-IC-202.7319.50/bin/idea.sh"
+alias automation="~/Desktop/automation/scala"
+alias glow="/home/linuxbrew/.linuxbrew/Cellar/glow/1.3.0_1/bin/glow"
 
 function bright() 
 {
@@ -190,3 +198,5 @@ function diary()
 export PATH="$PATH:/home/neil/android/platform-tools"
 export PATH="$PATH:/home/neil/.cabal/bin/"
 export PATH="$PATH:/home/neil/Desktop/automation/scala/scala-2.13.3/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

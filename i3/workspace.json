@@ -1,0 +1,125 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.4,
+    "type": "con",
+    "nodes": [
+        {
+            // splith split container with 1 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 1749,
+                       "width": 1596,
+                       "x": 1612,
+                       "y": 34
+                    },
+                    "name": "i3: i3 User’s Guide - Google Chrome",
+                    "percent": 1,
+                    "swallows": [
+                       {
+                       // "class": "^Google\\-chrome$",
+                       // "instance": "^google\\-chrome$",
+                       // "title": "^i3\\:\\ i3\\ User\\’s\\ Guide\\ \\-\\ Google\\ Chrome$",
+                       // "transient_for": "^$",
+                       // "window_role": "^browser$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1749,
+               "width": 3196,
+               "x": 12,
+               "y": 34
+            },
+            "name": "99 problems – OCaml - Google Chrome",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "class": "^Google\\-chrome$",
+               // "instance": "^google\\-chrome$",
+               // "title": "^99\\ problems\\ \\–\\ OCaml\\ \\-\\ Google\\ Chrome$",
+               // "transient_for": "^$",
+               // "window_role": "^browser$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splitv split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.6,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 722,
+               "width": 1134,
+               "x": 0,
+               "y": 0
+            },
+            "name": "i3-save-tree --workspace 2 > ~/.config/i3/workspace.json",
+            "percent": 0.6,
+            "swallows": [
+               {
+               // "class": "^Gnome\\-terminal$",
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 2\\ \\>\\ \\~\\/\\.config\\/i3\\/workspace\\.json$",
+               // "transient_for": "^$",
+               // "window_role": "^gnome\\-terminal\\-window\\-27f7e8aa\\-2137\\-470a\\-b9ca\\-1e79fa8e06de$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 722,
+               "width": 1134,
+               "x": 0,
+               "y": 0
+            },
+            "name": "TERM=screen-256color-bce tmux",
+            "percent": 0.4,
+            "swallows": [
+               {
+               // "class": "^Gnome\\-terminal$",
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^TERM\\=screen\\-256color\\-bce\\ tmux$",
+               // "transient_for": "^$",
+               // "window_role": "^gnome\\-terminal\\-window\\-0d5e64b0\\-d234\\-47ee\\-b303\\-b038267b2036$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

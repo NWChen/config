@@ -8,5 +8,5 @@ chmod +x ./*.sh &&
 ```
 
 - `i3` window manager
-- `vim`
-- `zsh`
+- `vim` / [autocomplete](https://github.com/Valloric/YouCompleteMe#linux-64-bit), [tree explorer](https://github.com/Valloric/YouCompleteMe#linux-64-bit), 
+- `zsh` / `oh-my-zsh`
